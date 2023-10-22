@@ -1,0 +1,179 @@
+@import url("https://fonts.google.com/specimen/Inter");
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+main {
+  display: flex;
+  background-color: hsl(244, 38%, 16%);
+  overflow: hidden;
+  width: 80vw;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  border-radius: 15px;
+}
+.info {
+  box-sizing: border-box;
+  padding: 40px;
+}
+.insights {
+  color: hsl(277, 64%, 61%);
+}
+.get {
+  font-size: 40px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.passge {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-bottom: 9em;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+.ctq h3 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.ctq p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+}
+
+.image {
+  
+  position: relative;
+}
+.image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(277, 64%, 61%); /* Change color and opacity here */
+  mix-blend-mode: multiply;
+}
+img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 1440px) {
+  main {
+    width: 80vw;
+    height: 60vh;
+    
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .info {
+    width: 50%;
+    height: 100%;
+    padding: 60px;
+  }
+  .get {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .passge {
+    font-size: 22px;
+    margin-bottom: 13em;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ctq h3 {
+    font-size: 50px;
+    color: white;
+  }
+  .ctq p {
+    font-size: 22px;
+    color: white;
+  }
+  .image {
+    width: 50%;
+    height: 100%;
+    position: relative;
+  }
+  .image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(277, 64%, 61%); /* Change color and opacity here */
+    mix-blend-mode: multiply;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    width: 330px;
+    height: 563px;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+  }
+  .info {
+    padding: 25px;
+    text-align: center;
+  }
+  .get {
+    font-size: 28px;
+  }
+  .passge {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .stats {
+    flex-direction: column;
+  }
+  .ctq h3 {
+    margin-bottom: 5px;
+  }
+  .ctq p {
+
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .image {
+    width: 330px;
+    height: 200px;
+    position: relative;
+  }
+  .image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(277, 64%, 61%); /* Change color and opacity here */
+    mix-blend-mode: multiply;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
